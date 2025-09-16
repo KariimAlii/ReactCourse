@@ -8,10 +8,6 @@ function App() {
     return (
         <>
             <div>
-                {/*It will also affected by header styles*/}
-                {/*<header>*/}
-                {/*    <h1>Hiiiiiiiiii</h1>*/}
-                {/*</header>*/}
                 <Header />
               <main>
                   <section id="core-concepts">
