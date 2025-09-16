@@ -1,5 +1,7 @@
 ﻿export default function TabButton({children}) {
     return (
-        <li><button>{children}</button></li>
+        <li>
+            <button>{children}</button>
+        </li>
     )
 }
