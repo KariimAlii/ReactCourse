@@ -24,12 +24,6 @@ function App() {
                       <h2>Examples</h2>
                       <menu>
                           <TabButton>Components</TabButton>
-
-                          <TabButton>
-                              <div>
-                                  <h2></h2>
-                              </div>
-                          </TabButton>
                       </menu>
                   </section>
               </main>
