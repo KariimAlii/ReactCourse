@@ -3,13 +3,17 @@ import { CORE_CONCEPTS } from './data.js'
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept/CoreConcept.jsx";
 import TabButton from "./components/TabButton/TabButton.jsx";
+import {useState} from "react";
 
 
 function App() {
-    let tabContent = 'Please click a button!';
+    // useState is a react Hook function
+    // it must be used at the top level of the component function
+    const [ selectedTopic, setSelectedTopic ] = useState('Please click a button!')
+
     function handleSelect(selectedButton) {
-        console.log(selectedButton)
-        tabContent = selectedButton;
+        // useState()   ❌❌ you cannot use it here ❌❌
+        setSelectedTopic(selectedButton);
     }
 
     console.log('APP COMPONENT EXECUTING')
@@ -36,7 +40,7 @@ function App() {
                           <TabButton onSelect={() => handleSelect('props')}>PROPS</TabButton>
                           <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
                       </menu>
-                      {  tabContent }
+                      {  selectedTopic }
                   </section>
               </main>
           </div>
