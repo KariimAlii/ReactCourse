@@ -10,13 +10,15 @@ function App() {
     // useState is a react Hook function
     // it must be used at the top level of the component function
     // Everytime setSelectedTopic is invoked
-    // -------- (1) it updated the (selectedTopic) value
-    // -------- (2) it re-invokes the component function
+    // -------- (1) it re-invokes the component function
+    // -------- (2) it updated the (selectedTopic) value
+
     const [ selectedTopic, setSelectedTopic ] = useState('Please click a button!')
 
     function handleSelect(selectedButton) {
         // useState()   ❌❌ you cannot use it here ❌❌
         setSelectedTopic(selectedButton);
+        console.log(selectedTopic)
     }
 
     console.log('APP COMPONENT EXECUTING')
