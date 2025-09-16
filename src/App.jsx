@@ -9,6 +9,9 @@ import {useState} from "react";
 function App() {
     // useState is a react Hook function
     // it must be used at the top level of the component function
+    // Everytime setSelectedTopic is invoked
+    // -------- (1) it updated the (selectedTopic) value
+    // -------- (2) it re-invokes the component function
     const [ selectedTopic, setSelectedTopic ] = useState('Please click a button!')
 
     function handleSelect(selectedButton) {
