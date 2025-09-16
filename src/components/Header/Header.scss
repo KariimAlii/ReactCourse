@@ -1,15 +1,12 @@
 ﻿header {
-    text-align: center;
-    margin: 3rem 0;
-}
-
-header img {
+  text-align: center;
+  margin: 3rem 0;
+  img {
     height: 5rem;
     width: 10rem;
     object-fit: cover;
-}
-
-header h1 {
+  }
+  h1 {
     margin: 0;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 5rem;
@@ -17,11 +14,12 @@ header h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-}
-
-header p {
+  }
+  p {
     margin: 0;
     font-size: 1.25rem;
     color: #8964b0;
     font-family: "Roboto Condensed", sans-serif;
+  }
 }
+
