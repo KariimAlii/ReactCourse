@@ -3,7 +3,7 @@ import {CORE_CONCEPTS} from './data.js'
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept/CoreConcept.jsx";
 import TabButton from "./components/TabButton/TabButton.jsx";
-import {useState} from "react";
+import {Fragment, useState} from "react";
 import {EXAMPLES} from "./data.js";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
     console.log('APP COMPONENT EXECUTING')
 
     return (
-        <>
+        <Fragment>
             <div>
                 <Header/>
                 <main>
@@ -69,7 +69,7 @@ function App() {
                     </section>
                 </main>
             </div>
-        </>
+        </Fragment>
     )
 }
 
