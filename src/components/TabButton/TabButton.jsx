@@ -3,7 +3,7 @@
     return (
         <li>
              {/*isSelected ? 'active' : ''    or   isSelected ? 'active' : undefined*/}
-            <button className={isSelected ? 'active' : ''} onClick={onSelect}>{children}</button>
+            <button className={isSelected ? 'active' : null} onClick={onSelect}>{children}</button>
         </li>
     )
 }
