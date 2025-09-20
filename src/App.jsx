@@ -31,11 +31,11 @@ function App() {
                         <h2>Core Concepts</h2>
                         <ul>
                             {
-                                CORE_CONCEPTS.map((coreConcept) => (
-                                    <CoreConcept {...coreConcept} key={coreConcept.title}/>
+                                CORE_CONCEPTS.map((coreConcept, index) => (
+                                    <CoreConcept {...coreConcept} key={index}/>
 
                                 // <CoreConcept
-                                //     key={coreConcept.title}
+                                //     key={index}
                                 //     title={coreConcept.title}
                                 //     description={coreConcept.description}
                                 //     image={coreConcept.image}/>
