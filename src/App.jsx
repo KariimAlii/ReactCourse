@@ -13,7 +13,7 @@ function App() {
     // -------- (1) it re-invokes the component function
     // -------- (2) it updated the (selectedTopic) value
 
-    const [ selectedTopic, setSelectedTopic ] = useState('Please click a button!')
+    const [ selectedTopic, setSelectedTopic ] = useState('components')
 
     function handleSelect(selectedButton) {
         // useState()   ❌❌ you cannot use it here ❌❌
@@ -52,7 +52,6 @@ function App() {
                               <code>{ EXAMPLES[selectedTopic].code }</code>
                           </pre>
                       </div>
-                      {  selectedTopic }
                   </section>
               </main>
           </div>
