@@ -33,7 +33,8 @@ function App() {
                             {
                                 CORE_CONCEPTS.map((coreConcept, index) => (
                                     <CoreConcept {...coreConcept} key={index}/>
-
+                                    // NOTE: Key prop is used by react to render and update the dynamic list
+                                    // and it should be a unique identifier for every element in a list
                                 // <CoreConcept
                                 //     key={index}
                                 //     title={coreConcept.title}
